@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>erwin liem</title>
+    <link rel="stylesheet" type="text/CSS" href="./style.css">
+</head>
+<body>
+    <div class="binary-background">
+        <div class="binary-layer layer-1" id="layer1"></div>
+        <div class="binary-layer layer-2" id="layer2"></div>
+        <div class="binary-layer layer-3" id="layer3"></div>
+    </div>
+
+    <nav class="navigation">
+        <a href="#home" class="nav-item">HOME</a>
+        <a href="#about" class="nav-item">ABOUT</a>
+        <a href="#projects" class="nav-item">PROJECTS</a>
+        <a href="#blog" class="nav-item">SKILLS</a>
+        <a href="#contact" class="nav-item">CONTACT</a>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="hero">
+            <div class="pixel-art"></div>
+            <div class="container">
+                <h1 class="title">ERWIN LIEM</h1>
+                <p id="home-page-p">Applied Data Science & AI Student | Jack of all trades master of none</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="title">About Me</h2>
+                <!-- <img src="" class="about-image"> -->
+                <p>hello i'm ERWIN, an <a id='link-adsai' href='https://www.zuyd.nl/opleidingen/applied-data-science-and-artificial-intelligence' target="_blank">Applied Data Science & AI student</a> with a passion for solving problems through data and technology. I love programming, building projects, and constantly learning new things.
+                    beyond coding, I have a wide range of hobbies—I hit the gym, ski and snowboard in the winter, and practice judo. I also enjoy gaming, music production, reading, and cooking. whether it's trying a new recipe or exploring a new technology, I'm always looking for ways to grow and challenge myself.
+                    check out my projects or connect with me if you need me.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="title">Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>GROCERY STORE COMPARER // SCHOOl // CLOSED</h3>
+                    <p>helps users find the best grocery deals by comparing prices across stores </p>
+                    <a href="./project_comparer.html" class="social-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>MY WEBSITES // PERSONAL // OPEN</h3>
+                    <p>all my websites ive designed so far</p>
+                    <a href="./my_websites.html" class="social-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>... // SCHOOl // OPEN</h3>
+                    <p>...............................</p>
+                    <a href="#" class="social-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>... // SCHOOl // OPEN</h3>
+                    <p>.................................</p>
+                    <a href="#" class="social-link">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section">
+        <div class="container">
+            <h2 class="title">SKILLS</h2>
+            <div class="skill-grid">
+                <div class="skill-card">
+                    <h3>PROGRAMMING</h3>
+                    <p>Python, JavaScript, HTML/CSS, SQL</p>
+                    <a href="#" class="social-link view-details" data-modal="programming">Read More</a>
+                </div>
+                <div class="skill-card">
+                    <h3>DATA SCIENCE</h3>
+                    <p>Machine Learning, Data Analysis, Visualization</p>
+                    <a href="#" class="social-link view-details" data-modal="datascience">Read More</a>
+                </div>
+                <div class="skill-card">
+                    <h3>WEB DEVELOPMENT</h3>
+                    <p>HTML, CSS, JS, REACT</p>
+                    <a href="#" class="social-link view-details" data-modal="tools">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="modal-programming">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-title">Programming Skills</h3>
+            <div class="modal-description">
+                <p>Proficient in multiple programming languages and frameworks:</p>
+                <div class="modal-tags">
+                    <span class="modal-tag">Python</span>
+                    <span class="modal-tag">JavaScript</span>
+                    <span class="modal-tag">HTML/CSS</span>
+                    <span class="modal-tag">SQL</span>
+                </div>
+                <p>Experience in web development, data processing, and automation.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-datascience">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-title">Data science</h3>
+            <div class="modal-description">
+                <p>Proficient in multiple programming languages and frameworks:</p>
+                <div class="modal-tags">
+                    <span class="modal-tag">Python</span>
+                    <span class="modal-tag">JavaScript</span>
+                    <span class="modal-tag">HTML/CSS</span>
+                    <span class="modal-tag">SQL</span>
+                </div>
+                <p>Experience in ML, data analysis, and visualization.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-tools">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-title">WEB DEVELOPMENT</h3>
+            <div class="modal-description">
+                <p>Proficient in multiple programming languages and frameworks:</p>
+                <div class="modal-tags">
+                    <span class="modal-tag">JavaScript</span>
+                    <span class="modal-tag">HTML/CSS</span>
+                    <span class="modal-tag">REACT</span>
+                </div>
+                <p>Experience in git, aws, and pytorch.</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="title">Contact</h2>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/ausername" class="social-link" target="_blank">linkedIn</a>
+                <a href="https://github.com/ausername" class="social-link" target="_blank">github</a>
+                <a href="mailto:blabla.email@example.com" class="social-link" target="_blank">email</a>
+                <a href="https://www.instagram.com/usernameetcetc" class="social-link" target="_blank">instagram</a>
+                <a href="https://open.spotify.com/track/3gGMsx3jxYKfhXq8LMj1tz?si=ceba3f619e2c4fcd" class="social-link" target="_blank">spotify</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="./functions.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Comparer Project</title>
+    <link rel="stylesheet" type="text/CSS" href="./style.css">
+</head>
+<body>
+    <div class="binary-background">
+        <div class="binary-layer layer-1" id="layer1"></div>
+        <div class="binary-layer layer-2" id="layer2"></div>
+        <div class="binary-layer layer-3" id="layer3"></div>
+    </div>
+
+    <nav class="navigation">
+        <a href="#about" class="nav-item">ABOUT</a>
+        <a href="#blog" class="nav-item">FEATURES</a>
+    </nav>
+
+    <section class="homepageimage">
+        <a href="./index.html"><img src="images/Schermafbeelding 2025-02-24 171753.png" alt="Description of the image"></a>
+    </section>
+    
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="title">About The Project</h2>
+                <p>The Grocery Store App is a user-friendly platform designed to help customers easily browse,
+                select, and purchase groceries online. It offers features like a search bar, product categories,
+                shopping cart, and secure checkout, providing a seamless shopping experience. The app is built with modern web technologies,
+                ensuring fast performance, easy navigation, and responsive design, making it accessible from any device. Whether you're looking for fresh produce, 
+                packaged goods, or household essentials, this app makes grocery shopping simple and convenient.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT FEATURES -->
+    <section id="blog" class="section">
+        <div class="container">
+            <h2 class="title">FEATURES</h2>
+            <div class="skill-grid">
+                <div class="skill-card">
+                    <h3>BAR CODE SCANNER</h3>
+                    <p></p>
+                    <a href="#" class="social-link view-details" data-modal="programming">Read More</a>
+                </div>
+                <div class="skill-card">
+                    <h3>SINGLE PRODUCT COMPARER</h3>
+                    <p></p>
+                    <a href="#" class="social-link view-details" data-modal="datascience">Read More</a>
+                </div>
+                <div class="skill-card">
+                    <h3>GROCERY LIST COMPARER</h3>
+                    <p></p>
+                    <a href="#" class="social-link view-details" data-modal="tools">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <!-- Centered heading -->
+            <h3 class="title" style="text-align: center;">WIREFLOWS</h3>
+            
+            <!-- Centered placeholder images container -->
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-top: 30px;">
+                <!-- Wireflow image 1 - clickable -->
+                <div class="wireflow-image">
+                    <img src="./images/Schermafbeelding 2025-02-24 175404.png" alt="Wireflow 1" class="wireflow-thumbnail" onclick="openModal('./images/Schermafbeelding 2025-02-24 175404.png', 'Wireflow 1')">
+                    <p>Wireflow 1 Description</p>
+                </div>
+                
+                <!-- Wireflow image 2 - clickable -->
+                <div class="wireflow-image">
+                    <img src="./images/Schermafbeelding 2025-02-24 213703.png" alt="Wireflow 2" class="wireflow-thumbnail" onclick="openModal('./images/Schermafbeelding 2025-02-24 213703.png', 'Wireflow 2')">
+                    <p>Wireflow 2 Description</p>
+                </div>
+                
+                <!-- Wireflow image 3 - clickable -->
+                <div class="wireflow-image">
+                    <img src="./images/Schermafbeelding 2025-02-24 213722.png" alt="Wireflow 3" class="wireflow-thumbnail" onclick="openModal('./images/Schermafbeelding 2025-02-24 213722.png', 'Wireflow 3')">
+                    <p>Wireflow 3 Description</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="close-image-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-content-wrapper">
+            <img id="modalImage" class="modal-image">
+            <div class="zoom-controls">
+                <button onclick="zoomIn()">Zoom In (+)</button>
+                <button onclick="zoomOut()">Zoom Out (-)</button>
+                <button onclick="resetZoom()">Reset</button>
+            </div>
+            <h3 id="modalCaption" class="modal-caption"></h3>
+        </div>
+    </div>
+
+    <script src="./functions.js"></script>
+</body>
+</html>
